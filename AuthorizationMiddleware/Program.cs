@@ -1,5 +1,7 @@
+using AuthorizationMiddleware.RequirementAuthorization;
 using DemoAPI.DAL;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
@@ -44,7 +46,12 @@ builder.Services.AddAuthorization(option =>
         build.RequireRole("Admin");
         build.RequireRole("User");
     });
+    option.AddPolicy("RequirementElectronics", option =>
+    {
+        option.Requirements.Add(new DepartmentRequirement("Administrator"));
+    });
 });
+builder.Services.AddSingleton<IAuthorizationHandler, DepartmentAuthorizationHandler>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<RefreshTokenContext>(option =>

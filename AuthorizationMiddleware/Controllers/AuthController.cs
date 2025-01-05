@@ -102,7 +102,8 @@ namespace AuthorizationMiddleware.Controllers
                 [
                     new(ClaimTypes.Email,userDetails.EmailId.ToString()),
                     new(ClaimTypes.NameIdentifier,userDetails.UserId.ToString()),
-                    new(ClaimTypes.Role,userDetails.UserRole)
+                    new(ClaimTypes.Role,userDetails.UserRole),
+                    new ("Department",userDetails.Department)
                 ]),
                 Issuer = _configuration["JWTSettings:Issuer"],
                 Audience = _configuration["JWTSettings:Audience"],
@@ -116,7 +117,7 @@ namespace AuthorizationMiddleware.Controllers
         }
 
         [HttpPost]
-        [Authorize(Policy = "OnlyAdmin")]
+        [Authorize(Policy = "RequirementElectronics")]
         [Route("AddProduct")]
         public IActionResult AddProduct()
         {
