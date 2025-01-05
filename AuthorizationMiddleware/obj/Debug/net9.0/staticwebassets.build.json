@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BG4ACrY3/5tpNs+zZqTOvBQeygAjtbhvouFHuOrgVOA=",
+  "Source": "AuthorizationMiddleware",
+  "BasePath": "_content/AuthorizationMiddleware",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

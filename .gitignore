@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/AuthorizationMiddleware/bin/Debug/net9.0
+/DemoAPI.DAL/bin/Debug/net9.0
