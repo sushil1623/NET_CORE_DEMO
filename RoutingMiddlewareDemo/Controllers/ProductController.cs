@@ -4,7 +4,7 @@ namespace RoutingMiddlewareDemo.Controllers
 {
     public class ProductController : Controller
     {
-        public IActionResult AddProduct()
+        public IActionResult AddProduct(int id)
         {
             return View();
         }

@@ -1,8 +1,13 @@
+using RoutingMiddlewareDemo.CustomConstraint;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRouting(option =>
+{
+    option.ConstraintMap.Add("IdGreaterThenTen", typeof(GreaterThenTenId));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,7 +27,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
      name: "CustomRoute",
-     pattern: "AddProduct",
+     pattern: "AddProduct/{id:IdGreaterThenTen?}",
      defaults:new {controller= "Product",action= "AddProduct" }
      );
 
