@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefreshTokenDemo", "Refresh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingMiddlewareDemo", "RoutingMiddlewareDemo\RoutingMiddlewareDemo.csproj", "{7056A2B5-CD4C-4659-86C1-20C5C337EFEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DontNetCore_DI", "DontNetCore_DI\DontNetCore_DI.csproj", "{58F48F9C-1390-4004-B700-3EDE02584AE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7056A2B5-CD4C-4659-86C1-20C5C337EFEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7056A2B5-CD4C-4659-86C1-20C5C337EFEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7056A2B5-CD4C-4659-86C1-20C5C337EFEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F48F9C-1390-4004-B700-3EDE02584AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F48F9C-1390-4004-B700-3EDE02584AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F48F9C-1390-4004-B700-3EDE02584AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F48F9C-1390-4004-B700-3EDE02584AE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

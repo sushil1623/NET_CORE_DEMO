@@ -1,0 +1,6 @@
+@DontNetCore_DI_HostAddress = http://localhost:5067
+
+GET {{DontNetCore_DI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
