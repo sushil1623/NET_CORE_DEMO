@@ -1,0 +1,6 @@
+@SingletoneDI_HostAddress = http://localhost:5298
+
+GET {{SingletoneDI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
