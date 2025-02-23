@@ -1,0 +1,6 @@
+@KeyedServiceDI_HostAddress = http://localhost:5121
+
+GET {{KeyedServiceDI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

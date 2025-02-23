@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScopedDI", "ScopedDI\Scoped
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransientDI", "TransientDI\TransientDI.csproj", "{5B406798-6C47-40D4-B6F6-C4D75892E6D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyedServiceDI", "KeyedServiceDI\KeyedServiceDI.csproj", "{5F1929F2-3F5E-4995-94A4-330D765ECD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{5B406798-6C47-40D4-B6F6-C4D75892E6D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B406798-6C47-40D4-B6F6-C4D75892E6D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B406798-6C47-40D4-B6F6-C4D75892E6D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F1929F2-3F5E-4995-94A4-330D765ECD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F1929F2-3F5E-4995-94A4-330D765ECD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F1929F2-3F5E-4995-94A4-330D765ECD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F1929F2-3F5E-4995-94A4-330D765ECD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
